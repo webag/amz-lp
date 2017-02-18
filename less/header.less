@@ -1,0 +1,75 @@
+.l-header{
+	background-color: #323e53;
+	color: #FFF;
+	padding: 14px 0;
+	font-size: 16px;
+	@media @l{
+		padding:  10px 0;
+		font-size: 14px;
+	}
+
+	.container{
+		display: flex;
+		align-items: center;
+		@media @s{
+			flex-wrap: wrap;
+		}
+	}
+
+	&__logo{
+		display: flex;
+		align-items: center;
+		@media @s{
+			width: 30%;
+		}
+
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__nav{
+		margin-left: 85px;
+		@media @m{
+			margin-left: 45px;
+		}
+		@media @s{
+			width: 70%;
+			margin-left: 0;
+			padding-left: 15px;
+			text-align: right;
+		}
+
+		a{
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: bold;
+			margin: 0 12px;
+			transition: all 0.3s ease;
+			@media @xs{
+				margin: 0 6px;
+			}
+			
+			&:hover{
+				color: @color-interface;
+			}
+		}
+	}
+
+	&__user{
+		margin-left: auto;
+		@media @s{
+			text-align: center;
+			margin-left: inherit;
+			margin-top: 15px;
+			width: 100%;
+		}
+
+		a{
+			text-transform: none;
+			font-weight: bold;
+		}
+	}
+}

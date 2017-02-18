@@ -1,0 +1,113 @@
+//basic modal layout
+.agmodal{
+	display: none;
+	vertical-align: middle;
+	position: relative;
+	max-width: 100%;
+	text-align: left;
+	margin: 50px 0;
+	transition: all 0.4s ease;
+	transform-origin: center top;
+	cursor: auto;
+	will-change: opacity,tranform;
+
+	&--fade{
+		opacity: 0;
+	}
+
+	&--slide{
+		transform: translate3d(0,-500px,0);
+	}
+
+	&--scale{
+		transform: scale3d(0.9,0.9,0.9);
+	}
+
+	&--3d{
+		transform: perspective(1000px) rotateX(45deg);
+	}
+
+	&--morph{
+		transition: transform 0.4s cubic-bezier(0.7,0,0.3,1),opacity 0.4s ease,width 0.4s ease;
+		transform: translate3d(-400px, 0, 0) scale3d(1.4, 0.5, 1);
+	}
+
+	&--visible{
+		transform: translate3d(0,0,0) scale3d(1,1,1);
+		opacity: 1;
+	}
+
+}
+
+.agmodal__wrapper{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	transition: all 0.4s ease;
+	box-sizing: border-box;
+	cursor: pointer;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	backface-visibility: hidden;
+	text-align: center;
+	pointer-events: none;
+	opacity: 0;
+	visibility: hidden;
+	@media (max-width: 1025px){
+		display: none;
+		transition: none;
+	}
+
+	&:before{
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		width: 0;
+	}
+
+	.agmodal{
+		display: inline-block;
+	}
+
+	&:focus{
+		outline-width: 0;
+	}
+
+	&--visible{
+		display: block;
+		visibility: visible;
+		pointer-events: auto;
+		opacity: 1;
+		z-index: 9999;
+	}
+}
+
+
+html{
+	&.agmodal--lock-test{
+		overflow-y: hidden !important;
+	}
+
+	&.agmodal--lock{
+		body{
+			overflow: hidden !important;
+		}
+	}
+}
+//basic modal layout
+
+
+//modal-styles
+.modal{
+	display: none;
+	background: #fcfcfc;
+	box-shadow: 0 5px 30px 10px rgba(23,43,64,0.15);
+	width: 400px;
+	padding: 25px 35px 35px 35px;
+	border-radius: 5px;
+}
+//modal-styles

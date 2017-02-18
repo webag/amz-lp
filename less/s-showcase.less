@@ -1,0 +1,154 @@
+.s-showcase{
+	padding: 100px 0;
+	@media @l{
+		padding: 50px 0;
+	}
+
+	.section-title{
+		margin-bottom: 100px;
+		@media @l{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+
+.showcases{
+	background-color: #f0f4f7;
+	border-radius: 10px;
+	max-width: 1105px;
+	margin: 0 auto;
+	padding: 40px 65px;
+	@media @l{
+		padding: 30px 15px;
+	}
+	@media @s{
+		padding: 15px;
+	}
+}
+
+.showcase{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+	@media @l{
+		margin-bottom: 40px;
+	}
+	@media @s{
+		flex-wrap: wrap;
+	}
+
+	&:nth-child(1){
+		align-items: flex-end;
+		.showcase__thumb{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		.showcase__right{
+			padding-bottom: 20px;
+		}
+		@media @l{
+			align-items: center;
+			.showcase__right{
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	&:last-child{
+		align-items: flex-start;
+		margin-bottom: 0;
+		.showcase__thumb{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		.showcase__right{
+			padding-top: 40px;
+		}
+		@media @l{
+			align-items: center;
+			.showcase__right{
+				padding-top: 0;
+			}
+		}
+	}
+
+	&__left{
+		position: relative;
+		padding: 0;
+		@media @l{
+			padding: 0 15px;
+		}
+	}
+
+	&__thumb{
+		box-shadow: 1px 5px 30px 2px rgba(23,42,53,0.15);
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		@media @l{
+			position: relative !important;
+		}
+	}
+
+	&__right{
+		padding-left: 45px;
+		@media @l{
+			padding-left: 15px;
+		}
+		@media @s{
+			margin-top: 15px;
+		}
+	}
+
+	h2{
+		margin-bottom: 1em;
+	}
+
+	p{
+		font-size: 18px;
+		margin-bottom: 0.7em;
+		@media @l{
+			font-size: 16px;
+		}
+		@media @m{
+			font-size: 14px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.showcase-tip{
+	margin-left: 50%;
+	padding-left: 45px;
+	white-space: nowrap;
+	margin-bottom: 30px;
+	@media @l{
+		display: none;
+	}
+	
+	&__play{
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		vertical-align: middle;
+		fill: #008cca;
+		margin-right: 10px;
+	}
+
+	span{
+		display: inline-block;
+		vertical-align: middle;
+		color: @color-text--grey;
+	}
+}

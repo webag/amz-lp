@@ -57,3 +57,20 @@ $(document).ready(function() {
 /***********************
  Scroll END
  ***********************/
+
+
+/***********************
+ fancybox BEGIN
+ ***********************/
+$(document).ready(function(){
+	$('.fancy-video').fancybox({
+		padding: 0,
+		width: 1600,
+		height: 900,
+		aspectRatio: true,
+		scrolling: 'no'
+	});
+});
+/***********************
+ fancybox END
+ ***********************/

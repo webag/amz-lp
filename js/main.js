@@ -40,3 +40,20 @@ $(document).ready(function() {
 /***********************
 Reviews slider END
 ***********************/
+
+
+/***********************
+ Scroll BEGIN
+ ***********************/
+$(document).ready(function() {
+	$('.sto').click(function () {
+		var elementClick = $(this).attr("href");
+		var destination = $(elementClick).offset().top;
+		$('html').animate( { scrollTop: destination }, 700 );
+		$('body').animate( { scrollTop: destination }, 700 );
+		return false;
+	});
+});
+/***********************
+ Scroll END
+ ***********************/

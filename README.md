@@ -1,4 +1,6 @@
 # amz-lp
+Просмотреть ленд:
+https://webag.github.io/amz-lp/
 
 Открыть / закрыть окно sign up
 ```javascript

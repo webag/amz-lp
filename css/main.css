@@ -2527,7 +2527,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__headings {
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 5px;
   }
 }
@@ -2563,7 +2563,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 600px) {
   .prices__features:after {
-    left: 10px;
+    left: 5px;
     right: 10px;
   }
 }

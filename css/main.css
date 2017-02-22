@@ -2520,14 +2520,8 @@ http://flickity.metafizzy.co
     font-size: 16px;
   }
 }
-@media (max-width: 600px) {
-  .prices__headings {
-    font-size: 14px;
-  }
-}
 @media (max-width: 480px) {
   .prices__headings {
-    font-size: 14px;
     padding-bottom: 5px;
   }
 }

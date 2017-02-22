@@ -2481,7 +2481,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__main {
-    padding: 40px 5px 20px 10px;
+    padding: 40px 10px 20px 10px;
   }
 }
 .prices__footer {
@@ -2502,7 +2502,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__footer {
-    padding: 20px 5px 20px 10px;
+    padding: 20px 10px;
   }
 }
 .prices__footer .prices-row {
@@ -2537,7 +2537,7 @@ http://flickity.metafizzy.co
 }
 .prices__features:after {
   content: '';
-  width: calc(100% - 50px);
+  width: calc(100% - 70px);
   border-bottom: 4px solid #f0f4f7;
   position: absolute;
   bottom: -2px;
@@ -2546,14 +2546,14 @@ http://flickity.metafizzy.co
 @media (max-width: 769px) {
   .prices__features:after {
     width: auto;
-    right: 15px;
-    left: 15px;
+    right: 10px;
+    left: 10px;
   }
 }
 @media (max-width: 600px) {
   .prices__features:after {
     left: 5px;
-    right: 10px;
+    right: 5px;
   }
 }
 .prices__features:last-of-type:after {
@@ -2573,6 +2573,9 @@ http://flickity.metafizzy.co
   .prices__features .prices-row__col {
     font-size: 16px;
   }
+}
+.prices__features .prices__footdescr:before {
+  display: none;
 }
 .prices__num {
   color: #acc2d3;
@@ -2651,6 +2654,28 @@ http://flickity.metafizzy.co
     font-size: 16px;
   }
 }
+.prices__footdescr {
+  position: relative;
+  color: #acc2d3;
+  display: block;
+  font-size: 14px;
+}
+.prices__footdescr:before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: #d5e0e9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media (max-width: 769px) {
+  .prices__footdescr {
+    font-size: 12px;
+  }
+}
 .prices .btn {
   margin-top: 20px;
   width: 100%;
@@ -2696,8 +2721,8 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices-row {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: -3px;
+    margin-right: -3px;
   }
 }
 .prices-row__left {
@@ -2735,7 +2760,7 @@ http://flickity.metafizzy.co
 @media (max-width: 480px) {
   .prices-row__col {
     width: calc(23.33333333%);
-    padding: 0 2px;
+    padding: 0 3px;
   }
 }
 

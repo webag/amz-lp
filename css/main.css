@@ -2481,7 +2481,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__main {
-    padding: 40px 5px 20px 5px;
+    padding: 40px 5px 20px 10px;
   }
 }
 .prices__footer {
@@ -2502,7 +2502,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__footer {
-    padding: 20px 5px;
+    padding: 20px 5px 20px 10px;
   }
 }
 .prices__footer .prices-row {
@@ -2591,8 +2591,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 480px) {
   .prices__num {
-    position: relative;
-    display: block;
+    display: none;
   }
 }
 .prices__name {

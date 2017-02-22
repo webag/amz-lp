@@ -2535,11 +2535,6 @@ http://flickity.metafizzy.co
     font-size: 14px;
   }
 }
-@media (max-width: 600px) {
-  .prices__features {
-    font-size: 14px;
-  }
-}
 .prices__features:after {
   content: '';
   width: calc(100% - 50px);
@@ -2576,7 +2571,7 @@ http://flickity.metafizzy.co
 }
 @media (max-width: 600px) {
   .prices__features .prices-row__col {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .prices__num {
@@ -2644,7 +2639,6 @@ http://flickity.metafizzy.co
 .prices__sum {
   display: block;
   font-size: 24px;
-  margin-bottom: 20px;
   white-space: nowrap;
 }
 @media (max-width: 769px) {
@@ -2658,6 +2652,7 @@ http://flickity.metafizzy.co
   }
 }
 .prices .btn {
+  margin-top: 20px;
   width: 100%;
   padding-left: 0;
   padding-right: 0;

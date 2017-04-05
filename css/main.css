@@ -2783,6 +2783,7 @@ http://flickity.metafizzy.co
   max-width: 1105px;
   margin: 0 auto;
   padding: 35px 35px 45px 35px;
+  box-shadow: 0 2px 6px 0 rgba(23, 43, 64, 0.1);
 }
 @media (max-width: 1024px) {
   .table-block {
@@ -2843,6 +2844,7 @@ http://flickity.metafizzy.co
 .data-table__row:first-child .data-table__col {
   font-weight: bold;
   border-top: 0;
+  padding-top: 0;
 }
 @media (max-width: 600px) {
   .data-table__row:first-child {
@@ -2899,6 +2901,117 @@ http://flickity.metafizzy.co
   .data-table__col:before {
     display: inline-block;
   }
+}
+.s-extension {
+  padding: 110px 0;
+}
+@media (max-width: 1024px) {
+  .s-extension {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 600px) {
+  .s-extension {
+    padding: 50px 0;
+  }
+}
+.s-extension .container {
+  max-width: 1300px;
+}
+.ext-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (max-width: 600px) {
+  .ext-row {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.ext-row__left {
+  padding-left: 100px;
+}
+@media (max-width: 1400px) {
+  .ext-row__left {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .ext-row__left {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+.ext-row__left ul {
+  line-height: 1.2;
+  list-style: none;
+}
+.ext-row__left ul li {
+  position: relative;
+  padding-left: 55px;
+  font-size: 24px;
+  margin-bottom: 1.2em;
+}
+@media (max-width: 1024px) {
+  .ext-row__left ul li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .ext-row__left ul li {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+}
+.ext-row__left ul li:before {
+  content: '—';
+  color: #4b6373;
+  opacity: 0.5;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 24px;
+}
+@media (max-width: 1024px) {
+  .ext-row__left ul li:before {
+    line-height: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .ext-row__left ul li:before {
+    line-height: 16px;
+  }
+}
+.ext-row__left .btn {
+  margin-left: 55px;
+}
+@media (max-width: 769px) {
+  .ext-row__left .btn {
+    margin-left: 30px;
+  }
+}
+.ext-row__right {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .ext-row__right {
+    width: 100%;
+  }
+}
+.ext-row__right img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

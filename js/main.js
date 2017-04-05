@@ -1,5 +1,5 @@
 /***********************
- отправка формы в php BEGIN
+Search form BEGIN
  ***********************/
 $(document).ready(function(){
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
 	});
 });
 /***********************
- отправка формы в php END
+ Search form END
  ***********************/
 
 

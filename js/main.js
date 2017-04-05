@@ -1,4 +1,35 @@
 /***********************
+ отправка формы в php BEGIN
+ ***********************/
+$(document).ready(function(){
+
+	$(".search-form").on("submit", function(event) {
+		event.preventDefault();
+		var search_block = $('.search-block');
+		var result_block = $('.table-block');
+		var loader = $('.search-block__loader');
+
+		$.ajax({
+			type: "POST",
+			url: "/",
+			success: (function() {
+				loader.addClass('active');
+				setTimeout(function() {
+					search_block.addClass('hidden');
+					loader.removeClass('active');
+					result_block.addClass('opened');
+				},4500);
+			})
+		});
+
+	});
+});
+/***********************
+ отправка формы в php END
+ ***********************/
+
+
+/***********************
  agmodal BEGIN
  ***********************/
 $(document).ready(function(){

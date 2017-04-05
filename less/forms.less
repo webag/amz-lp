@@ -1,4 +1,4 @@
-input[type="text"],input[type="tel"],input[type="email"],input[type="password"],textarea{
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],textarea,input[type="search"]{
 	display: inline-block;
 	font-family: @font;
 	font-size: 14px;
@@ -41,6 +41,70 @@ input[type="text"],input[type="tel"],input[type="email"],input[type="password"],
 		width: 50%;
 		@media @xs{
 			width: 60%;
+		}
+	}
+}
+
+.checkbox-group{
+	position: relative;
+
+	input{
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		&:checked+span{
+			&:before{
+				background-color: fade(@color-text,70%);
+				border: 2px solid fade(@color-text,0%);
+			}
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+
+	span{
+		display: inline-block;
+		font-size: 18px;
+		line-height: 1;
+		cursor: pointer;
+		padding-left: 2.2em;
+		position: relative;
+
+		&:before{
+			content: '';
+			width: 1em;
+			height: 1em;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: fade(@color-text,0%);
+			border: 2px solid fade(@color-text,40%);
+			border-radius: 2px;
+			z-index: 1;
+			transition: all 0.2s ease;
+		}
+
+		&:after{
+			content: '';
+			position: absolute;
+			width: 1em;
+			height: 1em;
+			left: 0;
+			top: 0;
+			background: url("../img/check.svg") center center no-repeat;
+			background-size: 13px 11px;
+			opacity: 0;
+			z-index: 2;
+			transition: opacity 0.2s ease;
+		}
+
+		&:hover{
+			&:before{
+				border: 2px solid fade(@color-text,70%);
+			}
 		}
 	}
 }
